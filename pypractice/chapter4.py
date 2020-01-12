@@ -55,7 +55,7 @@ print("My friend's favorite foods are:")
 print(friend_foods) """
 
 #  元组  #
-dimiensions=(200,50)     #不可修改
+""" dimiensions=(200,50)     #不可修改
 print(dimiensions[0])
 print(dimiensions[1])
 
@@ -66,7 +66,8 @@ for dimiension in dimiensions:
 dimiensions=(400,100,300)   #修改元组变量
 print('\nModified dimiendions:')
 for dimiension in dimiensions:
-    print(dimiension)
+    print(dimiension) """
+
 #  设置代码格式  #
 #缩进，行长，空行
 
