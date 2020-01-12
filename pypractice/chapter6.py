@@ -62,13 +62,15 @@ for language in favorite_languages.values():
 
 #  嵌套  #
 #字典列表
-aline_0={'color':'green','points':5}
+""" aline_0={'color':'green','points':5}
 aline_1={'color':'yellow','points':10}
 aline_2={'color':'red','points':15}
 
 aliens=[aline_0,aline_1,aline_2]
 for alien in aliens:
-    print(alien)
+    print(alien) """
+
+
 
 
 
