@@ -69,9 +69,53 @@ aline_2={'color':'red','points':15}
 aliens=[aline_0,aline_1,aline_2]
 for alien in aliens:
     print(alien) """
+""" #创建一个用于存储外星人的列表
+aliens = []
+#创建30个绿色外星人
+for alien_number in range(30):     #for前面别有空格
+    new_alien={'color':'green','point':5,'speed':'slow'}
+    aliens.append(new_alien)      #aliens单词别打错了
 
+for alien in aliens[0:3]:
+    if alien['color']=='green':     #别忘加冒号'green'
+        alien['color']='yellow'
+        alien['speed']='medium'
+        alien['point']=10
+    
+ #显示前五个外星人
+for alien in aliens[:5]:
+    print(alien)
 
+print('......')
+print('Total number of aliens:' + str(len(aliens))) """
 
+#在字典中存储列表
+""" #存储所点pizz信息
+pizza={
+    'crust':'thick',
+    'toppings':['mushrooms','extra cheese']
+    }
+print('You order a' + pizza['crust'] + '-crust pizza' + 
+      'with the following toppings:')
+for topping in pizza['toppings']:
+    print('\t' + topping) """
 
-
-
+#在字典中存储字典
+users={
+    'aeinstein':{
+        'first':'albert',
+        'last':'einstein',
+        'location':'princeton'
+        },             #别忘了逗号
+    'mcurie':{
+        'first':'marice',
+        'last':'curie',
+        'location':'paris'        
+        }
+    }
+for username,user_info in users.items():
+    print("Username:" + username)
+    full_name=user_info['first'] + ' ' + user_info['last']
+    location=user_info['location']
+    print('\tFull name: ' + full_name)
+    print('\tLocation: ' + location)
