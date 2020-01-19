@@ -3,7 +3,7 @@ import numpy as np
 def change(a):                     #乘自身并归一
 	b=np.dot(a,a)
 	m=a.shape
-	for i in range(m[0]):          #range(6)---0-5
+	for i in range(m[0]):          
 	    for j in range(m[1]):
 		    if b[i,j]!=0:
 			    b[i,j]=1
@@ -22,7 +22,7 @@ def keda(b):                       #生成可达矩阵
 	unit_b=unit(m[0])
 	K1=b+unit_b
 
-	for i in range(15):
+	for i in range(m[0]):
 		KN=change(K1)
 		if np.array_equal(KN,K1)==True:
 			break
